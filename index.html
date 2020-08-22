@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courts System Lookup</title>
+    <style>
+        #result {
+            margin-top: 24px;
+        }
+        button {
+            width: 80px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 4px;
+        }
+        th {
+            background: black;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background: #EEE;
+        }
+        span.time-alert {
+            font-weight: bold;
+            color: red;
+        }
+        span.time-green {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Courts System Lookup</h1>
+    <label for="searchDate">Date</label>
+    <input type="date" name="searchDate" id="searchDate">
+    <button onclick="search()">Loading...</button>
+    <div id="result"></div>
+    <script src="s2.js"></script>
+</body>
+</html>
